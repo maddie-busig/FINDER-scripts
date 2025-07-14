@@ -1,0 +1,8 @@
+<!ATTLIST properties scriptsDirectory CDATA #REQUIRED>
+<!ATTLIST properties shellScript CDATA #REQUIRED>
+<!ATTLIST properties shellQLScript CDATA #REQUIRED>
+<!ATTLIST properties javex CDATA #REQUIRED>
+<!ATTLIST properties grok CDATA #REQUIRED>
+<!ATTLIST properties ql CDATA #REQUIRED>
+<!ATTLIST properties variableExplorer CDATA #REQUIRED>
+<!ATTLIST properties candidateInstancesDirectory CDATA #REQUIRED>

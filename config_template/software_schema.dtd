@@ -1,0 +1,5 @@
+<!ELEMENT properties (software*)>
+<!ATTLIST software name CDATA #REQUIRED>
+<!ATTLIST software directory CDATA #REQUIRED>
+<!ATTLIST software source_directory CDATA #REQUIRED>
+<!ATTLIST software  candidate_type CDATA #REQUIRED>

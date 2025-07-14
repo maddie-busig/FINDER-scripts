@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" elementFormDefault="qualified" xsi:schemaLocation="
+		http://www.w3.org/2001/XMLSchema
+		http://www.w3.org/2001/XMLSchema.xsd">
+	<xsd:complexType name="typeOfPattern">
+		<xsd:attribute name="patternName" type="xsd:string" use="required"/>
+		<xsd:attribute name="inputFile" type="xsd:string" use="required"/>
+	</xsd:complexType>
+	<xsd:element name="FinderConf">
+		<xsd:complexType>
+			<xsd:sequence>
+				<xsd:element name="systemName" type="xsd:string"/>
+				<xsd:element name="moreInstanceDestination" type="xsd:string"/>
+				<xsd:element name="pattern" type="typeOfPattern" minOccurs="0" maxOccurs="unbounded"/>
+			</xsd:sequence>
+		</xsd:complexType>
+	</xsd:element>
+</xsd:schema>

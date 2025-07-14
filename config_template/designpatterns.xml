@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE software SYSTEM "designpattern_schema.dtd">
+
+<designpattern_list>
+	<designpattern name="FactoryMethod" pattern_roles="client creator concreteCreator product concreteProduct factoryMethod" ql_script="${FINDER_DIR}/finder/scripts/ql/FactoryMethod.ql" />
+	<designpattern name="FactoryMethod_degenerate" pattern_roles="client creator concreteCreatorconcreteProduct factoryMethod" ql_script="${FINDER_DIR}/finder/scripts/ql/FactoryMethod_degenerate.ql" />
+	<designpattern name="AbstractFactory" pattern_roles="client creator concreteCreator product concreteProduct factoryMethod" ql_script="${FINDER_DIR}/finder/scripts/ql/AbstractFactory.ql"/>
+	<designpattern name="AbstractFactory_degenerate" pattern_roles="client creator concreteCreator concreteProduct factoryMethod" ql_script="${FINDER_DIR}/finder/scripts/ql/AbstractFactory_degenerate.ql"/>
+	<designpattern name="adapter_object" pattern_roles="client target adapter adaptee"  ql_script="${FINDER_DIR}/finder/scripts/ql/adapter_object.ql"  />
+	<designpattern name="adapter_class" pattern_roles="client target adapter adaptee" ql_script="${FINDER_DIR}/finder/scripts/ql/adapter_class.ql"  />
+	<designpattern name="bridge" pattern_roles="abstraction concreteAbstraction implementer concreteImplementer" ql_script="${FINDER_DIR}/finder/scripts/ql/bridge.ql" /> 
+	<designpattern name="bridge_degenerate" pattern_roles="abstraction concreteAbstraction concreteImplementer" ql_script="${FINDER_DIR}/finder/scripts/ql/bridge_degenerate.ql" /> 
+	<designpattern name="builder" pattern_roles="director builder concreteBuilder product" ql_script="${FINDER_DIR}/finder/scripts/ql/builder.ql" /> 
+	<designpattern name="chain" pattern_roles="client handler concreteHandler " ql_script="${FINDER_DIR}/finder/scripts/ql/chain.ql" />
+	<designpattern name="command" pattern_roles="client invoker command concreteCommand receiver " ql_script="${FINDER_DIR}/finder/scripts/ql/command.ql"/>
+	<designpattern name="composite" pattern_roles="client leaf component composite  componentArray " ql_script="${FINDER_DIR}/finder/scripts/ql/composite.ql" />
+	<designpattern name="decorator" pattern_roles="client concreteComponent component decorator concreteDecorator " ql_script="${FINDER_DIR}/finder/scripts/ql/decorator.ql"/>
+	<designpattern name="decorator_degenerate" pattern_roles="client concreteComponent component concreteDecorator " ql_script="${FINDER_DIR}/finder/scripts/ql/decorator_degenerate.ql"/>
+	<designpattern name="flyweight" pattern_roles="client flyweightFactory flyweight concreteFlyweight  flyweightFactoryMethod" ql_script="${FINDER_DIR}/finder/scripts/ql/flyweight.ql" />
+	<designpattern name="interpreter" pattern_roles="client terminalExpression nonterminalExpression abstractExpression context" ql_script="${FINDER_DIR}/finder/scripts/ql/interpreter.ql"  />
+	<designpattern name="iterator" pattern_roles="client aggregate concreteAggregate iterator concreteIterator " ql_script="${FINDER_DIR}/finder/scripts/ql/iterator.ql"/>
+	<designpattern name="iterator_degenerate" pattern_roles="client concreteAggregate iterator concreteIterator " ql_script="${FINDER_DIR}/finder/scripts/ql/iterator_degenerate.ql"/>
+	<designpattern name="iterator_java" pattern_roles="client aggregate concreteAggregate iterator concreteIterator " ql_script="${FINDER_DIR}/finder/scripts/ql/iterator_java.ql"/>
+	<designpattern name="mediator" pattern_roles="concreteMediator mediator concreteColleague " ql_script="${FINDER_DIR}/finder/scripts/ql/mediator.ql"  />
+	<designpattern name="mediator_degenerate" pattern_roles="concreteMediator concreteColleague " ql_script="${FINDER_DIR}/finder/scripts/ql/mediator_degenerate.ql"  />
+	<designpattern name="memento" pattern_roles="originator memento caretaker " ql_script="${FINDER_DIR}/finder/scripts/ql/memento.ql"  />
+	<designpattern name="observer" pattern_roles="client subject concreteSubject observer concreteObserver" ql_script="${FINDER_DIR}/finder/scripts/ql/observer.ql" />
+	<designpattern name="prototype" pattern_roles="client prototypeInterface prototype cloneMethod" ql_script="${FINDER_DIR}/finder/scripts/ql/prototype.ql" />
+	<designpattern name="prototype_cloneable" pattern_roles="client cloneable prototype cloneMethod" ql_script="${FINDER_DIR}/finder/scripts/ql/prototype_cloneable.ql" />
+	<designpattern name="proxy" pattern_roles="client realSubject subject proxy " ql_script="${FINDER_DIR}/finder/scripts/ql/proxy.ql"/>
+	<designpattern name="singleton" pattern_roles="client singleton staticMethod" ql_script="${FINDER_DIR}/finder/scripts/ql/singleton.ql" />
+	<designpattern name="singleton_bill" pattern_roles="client singleton staticMethod" ql_script="${FINDER_DIR}/finder/scripts/ql/singleton_bill.ql" />
+	<designpattern name="state" pattern_roles="context state concreteState" ql_script="${FINDER_DIR}/finder/scripts/ql/state.ql" />
+	<designpattern name="strategy" pattern_roles="client context strategy concreteStrategy" ql_script="${FINDER_DIR}/finder/scripts/ql/strategy.ql" />
+	<designpattern name="templatemethod" pattern_roles="abstractClass concreteClass templateMethod abstractPrimitiveMethod" ql_script="${FINDER_DIR}/finder/scripts/ql/templatemethod.ql" />
+	<designpattern name="visitor" pattern_roles="visitor concreteVisitor element concreteElement " ql_script="${FINDER_DIR}/finder/scripts/ql/visitor.ql"  />
+	<designpattern name="visitor_reflective" pattern_roles="visitor concreteVisitor element concreteElement " ql_script="${FINDER_DIR}/finder/scripts/ql/visitor_reflective.ql"  />
+</designpattern_list>

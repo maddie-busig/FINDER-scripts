@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FinderConf xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="finderConverter.xsd">
+	<systemName>TAB2PS</systemName>
+	<moreInstanceDestination>${FINDER_DIR}/sample/Instance/FINDERInstance/tab2ps</moreInstanceDestination>
+	<pattern patternName="Bridge Degenerate" inputFile="${FINDER_DIR}/sample/RawResults/tab2ps.bridge_degenerate.out"/>
+	<pattern patternName="Chain of Responsibility" inputFile="${FINDER_DIR}/sample/RawResults/tab2ps.chain.out"/>
+	<pattern patternName="Composite" inputFile="${FINDER_DIR}/sample/RawResults/tab2ps.composite.out"/>
+	<pattern patternName="Decorator" inputFile="${FINDER_DIR}/sample/RawResults/tab2ps.decorator_degenerate.out"/>
+	<pattern patternName="State" inputFile="${FINDER_DIR}/sample/RawResults/tab2ps.state.out"/>
+	<pattern patternName="Strategy" inputFile="${FINDER_DIR}/sample/RawResults/tab2ps.strategy.out"/>
+	<pattern patternName="Template Method" inputFile="${FINDER_DIR}/sample/RawResults/tab2ps.templatemethod.out"/>
+</FinderConf>

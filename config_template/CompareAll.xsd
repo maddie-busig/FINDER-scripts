@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" elementFormDefault="qualified" xsi:schemaLocation="http://www.w3.org/2001/XMLSchema http://www.w3.org/2001/XMLSchema.xsd">
+	<xsd:complexType name="typeOfComparison">
+		<xsd:attribute name="patternName" type="xsd:string" use="required"/>
+		<xsd:attribute name="benchFile" type="xsd:string" use="required"/>
+		<xsd:attribute name="autoFile" type="xsd:string" use="required"/>
+	</xsd:complexType>
+	<xsd:simpleType name="typeOfBase">
+		<xsd:restriction base="xsd:string">
+			<xsd:enumeration value="benchmark"/>
+			<xsd:enumeration value="intersection"/>
+		</xsd:restriction>
+	</xsd:simpleType>
+	<xsd:element name="CompareAll">
+		<xsd:complexType>
+			<xsd:sequence>
+				<xsd:element name="systemName" type="xsd:string"/>
+				<xsd:element name="automaticTool" type="xsd:string"/>
+				<xsd:element name="benchmarkTool" type="xsd:string"/>
+				<xsd:element name="baseType" type="typeOfBase"/>
+				<xsd:element name="listOfComparison">
+					<xsd:complexType>
+						<xsd:sequence>
+							<xsd:element name="comparison" type="typeOfComparison" maxOccurs="unbounded"/>
+						</xsd:sequence>
+					</xsd:complexType>
+				</xsd:element>
+			</xsd:sequence>
+		</xsd:complexType>
+	</xsd:element>
+</xsd:schema>

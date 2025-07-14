@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE software SYSTEM "software_schema.dtd">
+
+<!-- "directory" corresponds to the path to the class files of the software system.
+     "source_directory" corresponds to the path of the source file of the software system.
+-->
+
+<properties>
+	<software directory="$PROJECT_DIR" name="$PROJECT" source_directory="$PROJECT_DIR" />
+
+</properties>
+

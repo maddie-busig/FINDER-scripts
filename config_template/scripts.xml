@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE software SYSTEM "scripts_schema.dtd">
+
+<!-- In most cases, the parameter that user needs to take care of in this file is "candidateInstancesDirectory", which specifies the FINDER raw results output directory"-->
+
+<properties grok="grok" javex="javex" ql="ql" scriptsDirectory="${FINDER_DIR}/finder/scripts/" shellScript="static.sh" shellQLScript="static_ql.sh" candidateInstancesDirectory="$RAWRESULTS_DIR" variableExplorer="VariableExplorer.jar" candidate_type="0">
+</properties>
+
